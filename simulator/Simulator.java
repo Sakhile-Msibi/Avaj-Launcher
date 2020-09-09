@@ -65,7 +65,8 @@ public class Simulator {
             for(Flyable flyable : flyables) {
                 flyable.registerTower(weatherTower);
             }
-            for(int j = 0; j < numberOfSimulations; j++) {
+            System.out.println(numberOfSimulations);
+            for(int i = 0; i < numberOfSimulations; i++) {
                 weatherTower.changeWeather();
             }
             read.close();

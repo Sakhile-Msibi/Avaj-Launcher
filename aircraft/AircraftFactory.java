@@ -1,6 +1,6 @@
 package aircraft;
 
-public class AircraftFactory {
+public abstract class AircraftFactory {
     private static boolean isMD5(String MD5Code) {
         if(MD5Code.length() == 32) {
             for(int i = 0; i < MD5Code.length(); i++) {
